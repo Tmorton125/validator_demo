@@ -1,0 +1,18 @@
+Validator Demo
+
+	Purpose Is to demo knowledge of Creating Custom Validators
+
+Setup
+
+	1. Put folder inside projects lib dir
+	2. In initializer create a file with following contents
+
+		require 'validators/list_data_validator'
+
+	3. Restart Server
+
+Usage
+
+	validates :name, list_data: { token: '|', limit: 3, regex: "[1-9][a-b]"  } 
+
+
